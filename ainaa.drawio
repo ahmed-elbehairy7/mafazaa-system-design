@@ -334,8 +334,8 @@
         <mxCell id="mzUIlvQEOGq6dSJyGh1E-147" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instances;" vertex="1" parent="1">
           <mxGeometry x="981" y="429.5" width="48" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="mzUIlvQEOGq6dSJyGh1E-148" value="EC2 instances" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1051" y="439.5" width="100" height="30" as="geometry" />
+        <mxCell id="mzUIlvQEOGq6dSJyGh1E-148" value="multiple EC2 instances" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1037" y="438.5" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mzUIlvQEOGq6dSJyGh1E-149" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#C925D1;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.elasticache_for_redis;" vertex="1" parent="1">
           <mxGeometry x="980.48" y="628.5" width="56.52" height="50" as="geometry" />
