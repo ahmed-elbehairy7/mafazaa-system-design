@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14" pages="2">
   <diagram name="high-level" id="8-smb9yRM81izmXv1z2y">
     <mxGraphModel dx="2076" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -63,6 +63,14 @@
         <mxCell id="9G0C_g3oGiicDgi-TUx9-23" value="&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px;&quot;&gt;Non-functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-weight: 400;&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 11px;&quot;&gt;1. scalability: should be easily scalable&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: 400;&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 11px;&quot;&gt;2. availability: should be always available&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: 400;&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 11px;&quot;&gt;3. latency: shouldn&#39;t be a bad experience&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 11px;&quot;&gt;4. consistency: all data should be synced&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 11px;&quot;&gt;5. calculations: high&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="80" width="230" height="150" as="geometry" />
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="KJKmLV7B80y6A8qRWkbc" name="dns">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
