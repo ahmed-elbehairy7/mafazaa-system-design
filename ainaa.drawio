@@ -509,7 +509,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="rz7nFzOFOf8pmhmHyJon" name="DNS">
-        <mxGraphModel dx="1528" dy="70" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1389" dy="-505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -615,8 +615,8 @@
                 <mxCell id="uGY2pbtLbY9iabVO44Mb-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="uGY2pbtLbY9iabVO44Mb-1" source="uGY2pbtLbY9iabVO44Mb-21" target="uGY2pbtLbY9iabVO44Mb-22" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="uGY2pbtLbY9iabVO44Mb-26" value="DNS server logic" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontStyle=1" parent="uGY2pbtLbY9iabVO44Mb-1" vertex="1">
-                    <mxGeometry x="195" y="30" width="170" height="40" as="geometry"/>
+                <mxCell id="uGY2pbtLbY9iabVO44Mb-26" value="DNS Resolver" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontStyle=1" parent="uGY2pbtLbY9iabVO44Mb-1" vertex="1">
+                    <mxGeometry x="210" y="30" width="140" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="uGY2pbtLbY9iabVO44Mb-27" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="490" y="1310" width="480" height="325" as="geometry"/>
