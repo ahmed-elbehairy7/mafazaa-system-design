@@ -1,6 +1,205 @@
 <mxfile host="65bd71144e" pages="2">
+    <diagram id="yDcnoQ-w4sotKixott70" name="website">
+        <mxGraphModel dx="1647" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-1" value="Requirements:&lt;br&gt;&lt;br&gt;1. steps/installation of apps for windows, android, linux, mac, ios, router&lt;div&gt;2. clear explanations for every step&lt;/div&gt;&lt;div&gt;3. a page indicating that protection is already done on this device&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="28" width="400" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-8" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);strokeWidth=2;endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-2" target="rOXuChgOmX8JVEiVYjmg-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-2" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-2" target="UtuCvoRXhWz_WTzKwQfW-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-2" value="الصفحة الرئيسية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-19" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-3" target="UtuCvoRXhWz_WTzKwQfW-18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-43" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-3" target="rOXuChgOmX8JVEiVYjmg-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-3" value="شوية شرح" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-10" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-4" target="rOXuChgOmX8JVEiVYjmg-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-21" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-4" target="UtuCvoRXhWz_WTzKwQfW-20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-4" value="اختار الجهاز اللي عايز تفعل عليه الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-11" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-5" target="UtuCvoRXhWz_WTzKwQfW-56" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="850" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-26" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-5" target="UtuCvoRXhWz_WTzKwQfW-25" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-5" value="شرح خطوات أو برنامج للتحميل" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-18" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-7" target="rOXuChgOmX8JVEiVYjmg-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-32" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-7" target="UtuCvoRXhWz_WTzKwQfW-31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-7" value="دعمنا، أم تفعليها على جهاز اخر" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-36" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-13" target="UtuCvoRXhWz_WTzKwQfW-35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-13" value="الصفحة الرئيسية للمدونة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-14" value="خدمة العملاء و التبرع موجودين دائما" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1570" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-15" value="نافذة مستويات الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1740" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-34" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-16" target="UtuCvoRXhWz_WTzKwQfW-33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-16" value="لقد تم تفعيل الحماية من قبل بالفعل" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1210" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-40" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-17" target="UtuCvoRXhWz_WTzKwQfW-39" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-17" value="منشور في المدونة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1910" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-4" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-1" target="UtuCvoRXhWz_WTzKwQfW-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-1" value="تصميم عشوائي من مجموعة تصميمات و عناوين مختارة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-6" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-3" target="UtuCvoRXhWz_WTzKwQfW-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-3" value="دعوة لقراءة أهم منشوري المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-8" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-5" target="UtuCvoRXhWz_WTzKwQfW-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-5" value="مستويات الحماية المتاحة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-10" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-7" target="UtuCvoRXhWz_WTzKwQfW-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-7" value="التأكيد على أهمية الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-13" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-9" target="UtuCvoRXhWz_WTzKwQfW-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-9" value="الحماية سهلة و بسيطة عن طريق برنامج يتم تحميله" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-15" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-12" target="UtuCvoRXhWz_WTzKwQfW-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-12" value="ادعمنا" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-14" value="ما هي مفازا" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-18" value="مساحة لكلام العميل يقرأه قبل ما يفعل الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-24" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-20" target="UtuCvoRXhWz_WTzKwQfW-23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-20" value="اختيار الجهاز اللي عايز يفعل عليه الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-23" value="زرار للاطلاع على مستويات الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-28" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-25" target="UtuCvoRXhWz_WTzKwQfW-27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-25" value="يإما صفحة فيها شعار للجهاز و تحميله" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-27" value="يإما صفحة فيها جزء من الخطوات، و الخطوات فيها التالي و السابق" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-31" value="نافذة الدعم، و زرار لتفعيل الحماية على جهاز اخر" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-33" value="إظهار خطأ إذا كان المستخدم قد فعل الحماية بالفعل" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1210" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-38" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-35" target="UtuCvoRXhWz_WTzKwQfW-37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-35" value="أهم منشوري المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-37" value="منشورات المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-42" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-39" target="UtuCvoRXhWz_WTzKwQfW-41" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-39" value="مكونات المنشور:&lt;div&gt;1. تصميم&lt;br&gt;2. عنوان&lt;/div&gt;&lt;div&gt;3. المنشور نفسه&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1910" y="310" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-41" value="اطلع على منشورات أخرى" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1910" y="480" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-47" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-44" target="UtuCvoRXhWz_WTzKwQfW-46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-44" value="نافذة الدعم" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2110" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-46" value="يحدد العميل الكمية اللي عايز يدعمنا بيها، و زرار &quot;ادعمنا&quot; ينقله على بوابة الدفع مباشر" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="2110" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-55" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-56" target="UtuCvoRXhWz_WTzKwQfW-57" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-58" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-56" target="rOXuChgOmX8JVEiVYjmg-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-56" value="مبارك تفعيل الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-61" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-57" target="UtuCvoRXhWz_WTzKwQfW-60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-57" value="خطوات لاختبار إن كانت الحماية تم تفعيلها بالفعل" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-63" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-60" target="UtuCvoRXhWz_WTzKwQfW-62" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-60" value="لو الحماية مش مفعلة، تظهر تحت نصائح يجربها المستخدم" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-62" value="لو مش عارف يشغل الحماية، يتواصل مع خدمة العملاء" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
     <diagram name="high-level" id="8-smb9yRM81izmXv1z2y">
-        <mxGraphModel dx="764" dy="327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="797" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -26,7 +225,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="KJKmLV7B80y6A8qRWkbc" name="cloud diagrams">
-        <mxGraphModel dx="2464" dy="327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2464" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -509,7 +708,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="rz7nFzOFOf8pmhmHyJon" name="DNS">
-        <mxGraphModel dx="1389" dy="-505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1002" dy="-515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -633,19 +832,19 @@
                 <mxCell id="uGY2pbtLbY9iabVO44Mb-31" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;block or allow a domain&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;/:domain?{block}&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get domain&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;/:domain&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Domain&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;update domain object&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:domain&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;PUT&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Domain&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="uGY2pbtLbY9iabVO44Mb-27" vertex="1">
                     <mxGeometry x="40" y="69.16937823834196" width="160" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="-HYDl6qu0HLPk6vQGEku-3" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="-HYDl6qu0HLPk6vQGEku-3" value="" style="group" parent="1" vertex="1" connectable="0">
                     <mxGeometry x="320" y="1660" width="650" height="595" as="geometry"/>
                 </mxCell>
-                <mxCell id="-HYDl6qu0HLPk6vQGEku-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="-HYDl6qu0HLPk6vQGEku-3">
+                <mxCell id="-HYDl6qu0HLPk6vQGEku-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="-HYDl6qu0HLPk6vQGEku-3" vertex="1">
                     <mxGeometry width="646.31" height="590" as="geometry"/>
                 </mxCell>
-                <mxCell id="-HYDl6qu0HLPk6vQGEku-5" value="DNS Logs schema" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontStyle=1" vertex="1" parent="-HYDl6qu0HLPk6vQGEku-3">
+                <mxCell id="-HYDl6qu0HLPk6vQGEku-5" value="DNS Logs schema" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=19;fontStyle=1" parent="-HYDl6qu0HLPk6vQGEku-3" vertex="1">
                     <mxGeometry x="259.9984343434344" y="10.003981093223457" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="-HYDl6qu0HLPk6vQGEku-6" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SourceSchema&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;this object should be sent with every log, it acts like&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;the identifier of the request&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;SourceSchema: {&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ip: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;port: number&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;On request start&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;tag: mafazaa.ainaa.dns.req&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;this log should be sent to fluentd on the start of the&amp;nbsp;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;request&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;schema: {&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;...sourceSchema,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;dns_query: {&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;qname: string,&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;type: number&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;On error&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;tag: mafazaa.ainaa.dns.err&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;this log should be sent after getting an error&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;schema: {&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;...sourceSchema,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;error: string&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="-HYDl6qu0HLPk6vQGEku-3">
+                <mxCell id="-HYDl6qu0HLPk6vQGEku-6" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SourceSchema&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;this object should be sent with every log, it acts like&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;the identifier of the request&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;SourceSchema: {&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ip: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;port: number&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;On request start&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;tag: mafazaa.ainaa.dns.req&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;this log should be sent to fluentd on the start of the&amp;nbsp;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;request&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;schema: {&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;...sourceSchema,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;dns_query: {&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;qname: string,&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;type: number&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;On error&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;tag: mafazaa.ainaa.dns.err&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;this log should be sent after getting an error&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;schema: {&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;...sourceSchema,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;error: string&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="-HYDl6qu0HLPk6vQGEku-3" vertex="1">
                     <mxGeometry x="29.997727272727275" y="86.00073449803469" width="300" height="490" as="geometry"/>
                 </mxCell>
-                <mxCell id="-HYDl6qu0HLPk6vQGEku-10" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;On response&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;tag: mafazaa.ainaa.dns.res&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;this log should be sent on the end of the request&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;after getting a successfull response! this helps to&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;determine which requests are getting to the end and&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;which are having errors in the middle and doesn&#39;t&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;complete&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;schema: {&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;...sourceSchema,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;response: {&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;block:&lt;/span&gt;&amp;nbsp;bool&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt; ,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;block_regex: bool,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;upstream: ip,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;google_regex: bool,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;cache_hit: bool,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;answers: [&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;type: number,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;answer: string&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;]&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="-HYDl6qu0HLPk6vQGEku-3">
+                <mxCell id="-HYDl6qu0HLPk6vQGEku-10" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;On response&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;tag: mafazaa.ainaa.dns.res&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;this log should be sent on the end of the request&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;after getting a successfull response! this helps to&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;determine which requests are getting to the end and&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;which are having errors in the middle and doesn&#39;t&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;complete&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;schema: {&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;...sourceSchema,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;response: {&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;block:&lt;/span&gt;&amp;nbsp;bool&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt; ,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;block_regex: bool,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;upstream: ip,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;google_regex: bool,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;cache_hit: bool,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;answers: [&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;{&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;type: number,&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;answer: string&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;]&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;}&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="-HYDl6qu0HLPk6vQGEku-3" vertex="1">
                     <mxGeometry x="331.9977272727273" y="80.00073449803472" width="300" height="360" as="geometry"/>
                 </mxCell>
             </root>
