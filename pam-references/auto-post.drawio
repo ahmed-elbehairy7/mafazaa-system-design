@@ -1,0 +1,842 @@
+<mxfile host="65bd71144e" pages="4">
+    <diagram name="MVP" id="OzSFaN5eAb0jM4mLu_PM">
+        <mxGraphModel dx="701" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-0"/>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-1" parent="32BxKOz9gZrwoFFcYVpB-0"/>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-2" value="" style="group" parent="32BxKOz9gZrwoFFcYVpB-1" vertex="1" connectable="0">
+                    <mxGeometry x="840" y="110" width="662" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-3" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry width="660" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="32BxKOz9gZrwoFFcYVpB-2" source="32BxKOz9gZrwoFFcYVpB-5" target="32BxKOz9gZrwoFFcYVpB-8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-5" value="user interface&lt;div&gt;nextjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry x="10" y="103" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="32BxKOz9gZrwoFFcYVpB-2" source="32BxKOz9gZrwoFFcYVpB-8" target="32BxKOz9gZrwoFFcYVpB-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="32BxKOz9gZrwoFFcYVpB-2" source="32BxKOz9gZrwoFFcYVpB-8" target="32BxKOz9gZrwoFFcYVpB-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-8" value="backend api server&lt;div&gt;expressjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry x="180" y="103" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-9" value="mongoDb db" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry x="380" y="90" width="41.2" height="86.2" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-10" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (components)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry y="10" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="32BxKOz9gZrwoFFcYVpB-2" source="32BxKOz9gZrwoFFcYVpB-13" target="32BxKOz9gZrwoFFcYVpB-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="32BxKOz9gZrwoFFcYVpB-2" source="32BxKOz9gZrwoFFcYVpB-13" target="32BxKOz9gZrwoFFcYVpB-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-13" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scheduling logic&amp;nbsp;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;using eventbridge&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry x="520" y="103" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-14" value="s3 file storage" style="rounded=0;whiteSpace=wrap;html=1;" parent="32BxKOz9gZrwoFFcYVpB-2" vertex="1">
+                    <mxGeometry x="340.5999999999999" y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-15" value="" style="group" parent="32BxKOz9gZrwoFFcYVpB-1" vertex="1" connectable="0">
+                    <mxGeometry x="50" y="350" width="640" height="1120" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-16" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="32BxKOz9gZrwoFFcYVpB-15" vertex="1">
+                    <mxGeometry width="640" height="983" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-17" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;PostsData&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;/postsData&lt;/b&gt;&lt;/font&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;create a new post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get a file upload url&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id/fileUrl&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok fileUrl&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get posts for a user&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok [PostId]&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;modify post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id(postProps)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;PUT&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok {status: success}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get upload urls&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/uploadUrls&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok urls&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-15" vertex="1">
+                    <mxGeometry x="30" y="80" width="210" height="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-18" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (API)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-15" vertex="1">
+                    <mxGeometry x="430" y="15" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-19" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;Profile&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;/profile&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get profile configurations&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;modify profile configuration&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id(profileProps)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;PUT&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete a profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private(user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-15" vertex="1">
+                    <mxGeometry x="300" y="430" width="170" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-20" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;/user&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get user data&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok {User}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;update user subscription details&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;private (user, pamylka.com)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/subscription&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-15" vertex="1">
+                    <mxGeometry x="30" y="750" width="190" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-21" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;posts&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;/posts&lt;/b&gt;&lt;/font&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get posts for a user&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok [PostId]&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok {status: success}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-15" vertex="1">
+                    <mxGeometry x="300" y="70" width="210" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-23" value="" style="group" parent="32BxKOz9gZrwoFFcYVpB-1" vertex="1" connectable="0">
+                    <mxGeometry x="20" y="40" width="790" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-24" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="32BxKOz9gZrwoFFcYVpB-23" vertex="1">
+                    <mxGeometry width="790" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-25" value="&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 15px;&quot;&gt;Functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px; font-weight: 400; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); line-height: 100%;&quot;&gt;users have a list of posts that&#39;s been scheduled and published over and over&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px; font-weight: 400; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); line-height: 100%;&quot;&gt;publish to a group or a page&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;publish to multiple platforms&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;a clever way to add variable data to posts&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;avoid crossposting&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;make reporpusing more easier with ai&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;analytics&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;make content burnout easier&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="32BxKOz9gZrwoFFcYVpB-23" vertex="1">
+                    <mxGeometry x="20" y="60" width="370" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-26" value="&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 15px;&quot;&gt;Non-functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;1. scalability: normal&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;2. availability: should be always active to schedule posts&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;3. latency: shouldn&#39;t be a bad experience&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: normal;&quot;&gt;4. consistency: important&lt;/span&gt;&lt;/h1&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. calculations: normal&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="32BxKOz9gZrwoFFcYVpB-23" vertex="1">
+                    <mxGeometry x="420" y="80" width="350" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-27" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-23" vertex="1">
+                    <mxGeometry x="310" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-28" value="" style="group" parent="32BxKOz9gZrwoFFcYVpB-1" vertex="1" connectable="0">
+                    <mxGeometry x="720" y="910" width="640" height="214" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-29" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="32BxKOz9gZrwoFFcYVpB-28" vertex="1">
+                    <mxGeometry width="640" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-30" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;main use case&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;actor: user&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scenario:&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;user should be able to configure day intervals,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;times&amp;nbsp;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;to post, add posts data, then view&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;scheduled and&amp;nbsp;&lt;/span&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;published posts&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-28" vertex="1">
+                    <mxGeometry x="30" y="65" width="270" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-31" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Use cases&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-28" vertex="1">
+                    <mxGeometry x="480" y="15" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-32" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;scheduling&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;actor: system&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scenario:&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;system should be able to store posts data provided by&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;user, schedule them to be published on time, posting&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;to groups or publishing for a page&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-28" vertex="1">
+                    <mxGeometry x="320" y="60" width="310" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-33" value="" style="group" parent="32BxKOz9gZrwoFFcYVpB-1" vertex="1" connectable="0">
+                    <mxGeometry x="720" y="350" width="642" height="524" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-34" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry y="3" width="640" height="517" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-35" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PostData&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;group: ObjectId,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;files: [string],&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;text: string,&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;timestamps: true&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry x="330" y="50" width="140" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-36" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data models&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry x="470" y="15" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-37" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;Post&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;profile: ObjectId,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;postData: ObjectId,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;status: PostStatus,&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;publishTime: timestamp,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;publishedAt: timestamp,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Timestamps: true,&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry x="330" y="220" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-38" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;PostStatus (Enum)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;enum { Scheduled, Publishing, Published,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Cancelled, Error}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry x="30" y="400" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-39" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;User&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;profiles: [ProfileId],&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;timestamps: true&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry x="30" y="30" width="150" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="32BxKOz9gZrwoFFcYVpB-40" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;user: ObjectId,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;group: ObjectId,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;hours: string[],&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;days: string[],&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;timeZone: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;token: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;pageUrl: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;postsData: [ObjectId],&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;active: boolean,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;timestamps: true&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="32BxKOz9gZrwoFFcYVpB-33" vertex="1">
+                    <mxGeometry x="30" y="150" width="170" height="240" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="high-level" id="dyGFYiwu21GuJYuzSbeo">
+        <mxGraphModel dx="1002" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-1" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="840" y="110" width="662" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-2" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry width="660" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Nc96AKdkwotpxMe6lG0i-1" source="Nc96AKdkwotpxMe6lG0i-4" target="Nc96AKdkwotpxMe6lG0i-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-4" value="user interface&lt;div&gt;nextjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry x="10" y="103" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="Nc96AKdkwotpxMe6lG0i-1" source="Nc96AKdkwotpxMe6lG0i-6" target="Nc96AKdkwotpxMe6lG0i-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Nc96AKdkwotpxMe6lG0i-1" source="Nc96AKdkwotpxMe6lG0i-6" target="Nc96AKdkwotpxMe6lG0i-46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-6" value="backend api server&lt;div&gt;expressjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry x="180" y="103" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-7" value="mongoDb db" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry x="380" y="90" width="41.2" height="86.2" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-8" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (components)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry y="10" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Nc96AKdkwotpxMe6lG0i-1" source="Nc96AKdkwotpxMe6lG0i-44" target="Nc96AKdkwotpxMe6lG0i-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="Nc96AKdkwotpxMe6lG0i-1" source="Nc96AKdkwotpxMe6lG0i-44" target="Nc96AKdkwotpxMe6lG0i-46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-44" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scheduling logic&amp;nbsp;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;using eventbridge&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry x="520" y="103" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-46" value="s3 file storage" style="rounded=0;whiteSpace=wrap;html=1;" parent="Nc96AKdkwotpxMe6lG0i-1" vertex="1">
+                    <mxGeometry x="340.5999999999999" y="10" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-9" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="50" y="350" width="640" height="1120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-10" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry width="640" height="1120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-11" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;PostsData&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;/postsData&lt;/b&gt;&lt;/font&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;create a new post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get a file upload url&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id/fileUrl&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok fileUrl&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get posts for a user&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok [PostId]&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;modify post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id(postProps)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;PUT&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok {status: success}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get upload urls&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/uploadUrls&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok urls&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry x="30" y="80" width="210" height="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-13" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (API)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry x="430" y="15" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-49" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;Profile&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;/profile&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get profile configurations&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;modify profile configuration&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id(profileProps)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;PUT&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok Profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete a profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private(user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry x="40" y="780" width="170" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-50" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;/user&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get user data&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok {User}&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;update user subscription details&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;private (user, pamylka.com)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/subscription&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry x="300" y="890" width="190" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-53" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;posts&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;/posts&lt;/b&gt;&lt;/font&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get posts for a user&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok [PostId]&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;get post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response 200 ok Post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok {status: success}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry x="300" y="70" width="210" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="jAhRFScy9EEFoIOksLYV-3" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;Groups&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 16px;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;/groups&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;creates a group for user&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;POST&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;get groupId by name&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/byname/:name&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok groupId&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;get group&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;GET&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok group&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;update group&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id(groupProps)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;PUT&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;delete group&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;private (user)&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/:id&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;DELETE&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;response: 200 ok&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-9" vertex="1">
+                    <mxGeometry x="300" y="400" width="160" height="480" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-18" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="20" y="40" width="790" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-19" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="Nc96AKdkwotpxMe6lG0i-18" vertex="1">
+                    <mxGeometry width="790" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-20" value="&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 15px;&quot;&gt;Functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px; font-weight: 400; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); line-height: 100%;&quot;&gt;users have a list of posts that&#39;s been scheduled and published over and over&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px; font-weight: 400; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); line-height: 100%;&quot;&gt;publish to a group or a page&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;publish to multiple platforms&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;a clever way to add variable data to posts&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;avoid crossposting&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;make reporpusing more easier with ai&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;analytics&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;make content burnout easier&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Nc96AKdkwotpxMe6lG0i-18" vertex="1">
+                    <mxGeometry x="20" y="60" width="370" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-21" value="&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 15px;&quot;&gt;Non-functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;1. scalability: normal&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;2. availability: should be always active to schedule posts&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;3. latency: shouldn&#39;t be a bad experience&lt;/span&gt;&lt;/h1&gt;&lt;h1 data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: normal;&quot;&gt;4. consistency: important&lt;/span&gt;&lt;/h1&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;line-height: 0%;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. calculations: normal&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="Nc96AKdkwotpxMe6lG0i-18" vertex="1">
+                    <mxGeometry x="420" y="80" width="350" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-22" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-18" vertex="1">
+                    <mxGeometry x="310" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-36" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="720" y="910" width="640" height="214" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-37" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="Nc96AKdkwotpxMe6lG0i-36" vertex="1">
+                    <mxGeometry width="640" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-38" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;main use case&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;actor: user&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scenario:&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;user should be able to configure day intervals,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;times&amp;nbsp;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;to post, add posts data, then view&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;scheduled and&amp;nbsp;&lt;/span&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;published posts&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-36" vertex="1">
+                    <mxGeometry x="30" y="65" width="270" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-39" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Use cases&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-36" vertex="1">
+                    <mxGeometry x="480" y="15" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="H-i4VCKOyVgDC0gI0cPH-2" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;scheduling&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;actor: system&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scenario:&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;system should be able to store posts data provided by&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;user, schedule them to be published on time, posting&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;to groups or publishing for a page&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="Nc96AKdkwotpxMe6lG0i-36" vertex="1">
+                    <mxGeometry x="320" y="60" width="310" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="H-i4VCKOyVgDC0gI0cPH-1" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="720" y="350" width="642" height="524" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-23" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry y="3" width="640" height="517" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-25" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;PostData&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;group: ObjectId,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;files: [string],&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;text: string,&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;timestamps: true&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="330" y="50" width="140" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-27" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data models&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="470" y="15" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-51" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;Post&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;profile: ObjectId,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;postData: ObjectId,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;status: PostStatus,&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;publishTime: timestamp,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;publishedAt: timestamp,&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Timestamps: true,&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space-collapse: preserve;&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="330" y="225" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="Nc96AKdkwotpxMe6lG0i-52" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;PostStatus (Enum)&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;enum { Scheduled, Publishing, Published,&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Cancelled, Error}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="330" y="400" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="jAhRFScy9EEFoIOksLYV-1" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;User&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;profiles: [ProfileId],&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;timestamps: true&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="30" y="10" width="150" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;user: ObjectId,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;group: ObjectId,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;hours: string[],&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;days: string[],&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;timeZone: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;token: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;pageUrl: string,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;active: boolean,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;timestamps: true&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="30" y="130" width="140" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Group&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;{&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: ObjectId,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;user: ObjectId,&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;name: string (unique),&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;postsData: [ObjectId],&lt;br&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;public: boolean,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;timestamps: true&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="H-i4VCKOyVgDC0gI0cPH-1" vertex="1">
+                    <mxGeometry x="30" y="335" width="170" height="170" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="KtDc5hrQk6RTZ_Fc3YFd" name="aws">
+        <mxGraphModel dx="1551" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-1" value="mafazaa/pamylka/auto-post" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="100" width="560" height="660" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-3" value="Middle East (Bahrain)&lt;div&gt;me-south-1&lt;/div&gt;" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#00A4A6;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=1;" parent="CW7iJgRb__zB2Op2jWav-1" vertex="1">
+                    <mxGeometry x="20" y="40" width="520" height="610" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-4" value="me-south-1a" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;" parent="CW7iJgRb__zB2Op2jWav-3" vertex="1">
+                    <mxGeometry x="20" y="40" width="330" height="550" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-8" value="Auto-Post" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc2;strokeColor=#8C4FFF;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" parent="CW7iJgRb__zB2Op2jWav-3" vertex="1">
+                    <mxGeometry x="50" y="80" width="280" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-6" value="public" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#7AA116;fillColor=#F2F6E8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;" parent="CW7iJgRb__zB2Op2jWav-8" vertex="1">
+                    <mxGeometry x="30" y="40" width="210" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-7" value="backend-db" style="fillColor=none;strokeColor=#DD3522;verticalAlign=top;fontStyle=0;fontColor=#DD3522;whiteSpace=wrap;html=1;" parent="CW7iJgRb__zB2Op2jWav-6" vertex="1">
+                    <mxGeometry x="30" y="40" width="160" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="GbZFSPT0MsqVE1ErkpPa-2" style="edgeStyle=none;html=1;" parent="CW7iJgRb__zB2Op2jWav-6" source="CW7iJgRb__zB2Op2jWav-10" target="GbZFSPT0MsqVE1ErkpPa-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-10" value="auto-post-backend" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.instance2;" parent="CW7iJgRb__zB2Op2jWav-6" vertex="1">
+                    <mxGeometry x="86" y="160" width="48" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="GbZFSPT0MsqVE1ErkpPa-1" value="auto-post-db-volume" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.volume;" parent="CW7iJgRb__zB2Op2jWav-6" vertex="1">
+                    <mxGeometry x="94.57" y="80" width="30.87" height="38.84" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-14" value="auto-post-publish" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.lambda_function;" parent="CW7iJgRb__zB2Op2jWav-8" vertex="1">
+                    <mxGeometry x="116" y="390" width="48" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-23" style="edgeStyle=none;html=1;" parent="CW7iJgRb__zB2Op2jWav-8" source="CW7iJgRb__zB2Op2jWav-14" target="CW7iJgRb__zB2Op2jWav-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-24" value="talk with database" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CW7iJgRb__zB2Op2jWav-23" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1204" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-12" value="auto-post" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.bucket;" parent="CW7iJgRb__zB2Op2jWav-3" vertex="1">
+                    <mxGeometry x="430" y="180" width="46.15" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-18" style="edgeStyle=none;html=1;" parent="CW7iJgRb__zB2Op2jWav-3" source="CW7iJgRb__zB2Op2jWav-13" target="CW7iJgRb__zB2Op2jWav-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-25" value="trigger lambda" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CW7iJgRb__zB2Op2jWav-18" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1604" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-13" value="auto-post-schedulers" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#E7157B;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.eventbridge_scheduler;" parent="CW7iJgRb__zB2Op2jWav-3" vertex="1">
+                    <mxGeometry x="410" y="296" width="78" height="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-15" style="edgeStyle=none;html=1;" parent="CW7iJgRb__zB2Op2jWav-3" source="CW7iJgRb__zB2Op2jWav-10" target="CW7iJgRb__zB2Op2jWav-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-21" value="store media files" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CW7iJgRb__zB2Op2jWav-15" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0223" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-16" style="edgeStyle=none;html=1;" parent="CW7iJgRb__zB2Op2jWav-3" source="CW7iJgRb__zB2Op2jWav-10" target="CW7iJgRb__zB2Op2jWav-13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-20" value="create, modify, get scheduled&lt;div&gt;events in this group&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CW7iJgRb__zB2Op2jWav-16" vertex="1" connectable="0">
+                    <mxGeometry x="0.022" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-32" value="backend server content" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_ec2_instance_contents;strokeColor=#D86613;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#D86613;dashed=0;" parent="CW7iJgRb__zB2Op2jWav-3" vertex="1">
+                    <mxGeometry x="370" y="50" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-33" value="expressjs app&lt;div&gt;mongodb db&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="CW7iJgRb__zB2Op2jWav-32" vertex="1">
+                    <mxGeometry x="10" y="50" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-2" value="AWS Diagram" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="345" y="30" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-26" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.facebook;fillColor=#6294E4;gradientColor=#1A2665" parent="1" vertex="1">
+                    <mxGeometry x="730" y="540" width="39" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-27" style="edgeStyle=none;html=1;" parent="1" source="CW7iJgRb__zB2Op2jWav-14" target="CW7iJgRb__zB2Op2jWav-26" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-28" value="calls facebook api" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CW7iJgRb__zB2Op2jWav-27" vertex="1" connectable="0">
+                    <mxGeometry x="0.0341" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-30" style="edgeStyle=none;html=1;strokeColor=default;jumpStyle=sharp;" parent="1" source="CW7iJgRb__zB2Op2jWav-26" target="CW7iJgRb__zB2Op2jWav-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="CW7iJgRb__zB2Op2jWav-31" value="access publicly&amp;nbsp;&lt;div&gt;available files&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CW7iJgRb__zB2Op2jWav-30" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0532" y="2" relative="1" as="geometry">
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-1" value="AutoPostSchedulerRole" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.role;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="160" width="63.82" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-2" value="AutoPostBackendRole" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#DD344C;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.role;" parent="1" vertex="1">
+                    <mxGeometry x="-140" y="426" width="63.82" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-5" style="edgeStyle=none;html=1;" parent="1" source="8SxR4vVFB1WoOl8GiGSn-3" target="8SxR4vVFB1WoOl8GiGSn-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-3" value="AutoPostSchedulerPolicy" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.policy;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="154.5" width="54.72" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-6" style="edgeStyle=none;html=1;" parent="1" source="8SxR4vVFB1WoOl8GiGSn-4" target="8SxR4vVFB1WoOl8GiGSn-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-4" value="AutoPostBackendPolicy" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.policy;" parent="1" vertex="1">
+                    <mxGeometry x="-135.45" y="620" width="54.72" height="47" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-7" style="edgeStyle=none;html=1;" parent="1" source="CW7iJgRb__zB2Op2jWav-10" target="8SxR4vVFB1WoOl8GiGSn-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8SxR4vVFB1WoOl8GiGSn-8" value="Allw access to s3 bucket&lt;div&gt;allow access to schedule events using eventbridge scheduler&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-320" y="703" width="350" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="oDd5ANrdaxMVgBuEbNdm" name="main">
+        <mxGraphModel dx="152" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-1" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="870" y="780" width="320" height="168" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-2" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="1PGbmvX5maBW0LA0Hvin-1" vertex="1">
+                    <mxGeometry width="320" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-3" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;main use case&lt;/b&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;actor: user&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scenario:&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;user should be able to configure day intervals,&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;times&amp;nbsp;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;to post, add posts data, then view&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;scheduled and&amp;nbsp;&lt;/span&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;published posts&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1PGbmvX5maBW0LA0Hvin-1" vertex="1">
+                    <mxGeometry x="30" y="20" width="270" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-6" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;size=60;" parent="1" vertex="1">
+                    <mxGeometry x="1020.01" y="1110" width="29.99" height="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1PGbmvX5maBW0LA0Hvin-6" vertex="1">
+                    <mxGeometry x="10" y="72" width="10" height="788" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-8" value="user" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="1080" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-9" value="dashboard ui" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=42;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="1110" width="100" height="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1PGbmvX5maBW0LA0Hvin-9" vertex="1">
+                    <mxGeometry x="45" y="80" width="10" height="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-11" value="create a new post" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1040" y="1590" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-12" value="check if user&amp;nbsp;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;configured his profile&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1216" y="1300" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1246" y="1330"/>
+                        </Array>
+                        <mxPoint x="1221" y="1330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-13" value="200 OK Profile 400 {status: failure}" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1413" y="1268" as="sourcePoint"/>
+                        <mxPoint x="1215" y="1268" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="1PGbmvX5maBW0LA0Hvin-14" value="show dialoge to enter&lt;div&gt;text and media&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1205" y="1640" as="sourcePoint"/>
+                        <mxPoint x="1040" y="1640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-1" value="API &amp;amp; DB" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=42;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="1110" width="100" height="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="sfX6Y6t2FsTCowHZCcLG-1" vertex="1">
+                    <mxGeometry x="45" y="80" width="10" height="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-3" value="enters the website" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1040" y="1210" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-5" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="1350" width="560" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-7" value="if not configured" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="1360" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-10" value="redirect(/config)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1209.5" y="1414.6799999999998" as="sourcePoint"/>
+                        <mxPoint x="1040" y="1414.68" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-11" value="user enters the data and&amp;nbsp;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;clicks save&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1040" y="1450" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sfX6Y6t2FsTCowHZCcLG-12" value="GET /profile" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1216" y="1225" as="sourcePoint"/>
+                        <mxPoint x="1403" y="1226" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p0F1IBTjS66ZD0jupDTs-1" value="POST /profile(profileProps)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1216" y="1470" as="sourcePoint"/>
+                        <mxPoint x="1403" y="1471" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p0F1IBTjS66ZD0jupDTs-2" value="201 created {status: success}" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1413" y="1500" as="sourcePoint"/>
+                        <mxPoint x="1215" y="1500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p0F1IBTjS66ZD0jupDTs-3" value="disable&amp;nbsp;&lt;div&gt;everything&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1216" y="1370" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1246" y="1400"/>
+                        </Array>
+                        <mxPoint x="1221" y="1400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p0F1IBTjS66ZD0jupDTs-4" value="redirect(/dashboard)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1209.5" y="1529.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="1040" y="1530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p0F1IBTjS66ZD0jupDTs-5" value="enters post details" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1040" y="1680" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p0F1IBTjS66ZD0jupDTs-6" value="PUT /postsData(postsDataProps)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1216" y="1720" as="sourcePoint"/>
+                        <mxPoint x="1403" y="1721" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-1" value="201 created PostData" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1413" y="1790" as="sourcePoint"/>
+                        <mxPoint x="1215" y="1790" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-2" value="if post is after an hour,&lt;div&gt;add it to agenda&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1416" y="1740" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1446" y="1770"/>
+                        </Array>
+                        <mxPoint x="1421" y="1770" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-3" value="GET /postsData" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1216" y="1830" as="sourcePoint"/>
+                        <mxPoint x="1403" y="1831" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-4" value="200 ok [PostData]" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1413" y="1870" as="sourcePoint"/>
+                        <mxPoint x="1215" y="1870" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-5" value="GET /posts" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1216" y="1906" as="sourcePoint"/>
+                        <mxPoint x="1403" y="1907" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-6" value="200 ok [Post]" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1413" y="1940" as="sourcePoint"/>
+                        <mxPoint x="1215" y="1940" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-8" value="user wants to see his posts" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1040" y="1810" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1810" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FCVqnQjpbM8ll9bisBGO-9" value="user wants to see his published posts" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1040" y="1890" as="sourcePoint"/>
+                        <mxPoint x="1205" y="1890" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="FjAAi7XPEiZ9Uj1ubzky-1" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="1220" y="690" width="360" height="258" as="geometry"/>
+                </mxCell>
+                <mxCell id="FjAAi7XPEiZ9Uj1ubzky-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="FjAAi7XPEiZ9Uj1ubzky-1" vertex="1">
+                    <mxGeometry width="360" height="258" as="geometry"/>
+                </mxCell>
+                <mxCell id="FjAAi7XPEiZ9Uj1ubzky-3" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;main sitemap&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/dashboard&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;protected&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;a page containing user&#39;s postdata and posts, a create&amp;nbsp;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;new post button, then shows a window for user to add&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;post&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;protected&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;a page for the user to configure his profile&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;/pricing&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;public&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;a page containing the pricing details of the service&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FjAAi7XPEiZ9Uj1ubzky-1" vertex="1">
+                    <mxGeometry x="18.569999999999936" y="9" width="310" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="OdS6FDIWWfSHHXYI6kqf-1" value="POST /postdata" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1216" y="1610" as="sourcePoint"/>
+                        <mxPoint x="1403" y="1611" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-1" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;size=60;" parent="1" vertex="1">
+                    <mxGeometry x="1690.01" y="1110" width="29.99" height="860" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="P22XrcBUhHHD5Wx6bQLX-1" vertex="1">
+                    <mxGeometry x="10" y="72" width="10" height="788" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-3" value="user" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1680" y="1080" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-4" value="ui" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=42;" parent="1" vertex="1">
+                    <mxGeometry x="1830" y="1110" width="100" height="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="P22XrcBUhHHD5Wx6bQLX-4" vertex="1">
+                    <mxGeometry x="45" y="80" width="10" height="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-6" value="create a new post" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1710" y="1590" as="sourcePoint"/>
+                        <mxPoint x="1875" y="1590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-7" value="check if user&amp;nbsp;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;configured his profile&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1886" y="1300" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1916" y="1330"/>
+                        </Array>
+                        <mxPoint x="1891" y="1330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-8" value="200 OK Profile 400 {status: failure}" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2083" y="1268" as="sourcePoint"/>
+                        <mxPoint x="1885" y="1268" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-9" value="show dialoge to enter&lt;div&gt;text and media&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1875" y="1640" as="sourcePoint"/>
+                        <mxPoint x="1710" y="1640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-10" value="API &amp;amp; DB" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};size=42;" parent="1" vertex="1">
+                    <mxGeometry x="2030" y="1110" width="100" height="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-11" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="P22XrcBUhHHD5Wx6bQLX-10" vertex="1">
+                    <mxGeometry x="45" y="80" width="10" height="770" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-12" value="enters the website&lt;div&gt;and creates a profile&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1710" y="1210" as="sourcePoint"/>
+                        <mxPoint x="1875" y="1210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-13" value="opt" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+                    <mxGeometry x="1620" y="1350" width="560" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-14" value="if not configured" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1750" y="1360" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-15" value="redirect(/config)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1879.5" y="1414.6799999999998" as="sourcePoint"/>
+                        <mxPoint x="1710" y="1414.68" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-16" value="user enters the data and&amp;nbsp;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;clicks save&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1710" y="1450" as="sourcePoint"/>
+                        <mxPoint x="1875" y="1450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-17" value="POST /profile" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1886" y="1225" as="sourcePoint"/>
+                        <mxPoint x="2073" y="1226" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-18" value="POST /profile(profileProps)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1886" y="1470" as="sourcePoint"/>
+                        <mxPoint x="2073" y="1471" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-19" value="201 created {status: success}" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2083" y="1500" as="sourcePoint"/>
+                        <mxPoint x="1885" y="1500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-20" value="disable&amp;nbsp;&lt;div&gt;everything&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1886" y="1370" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1916" y="1400"/>
+                        </Array>
+                        <mxPoint x="1891" y="1400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-21" value="redirect(/dashboard)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1879.5" y="1529.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="1710" y="1530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-22" value="enters post details" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1710" y="1680" as="sourcePoint"/>
+                        <mxPoint x="1875" y="1680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-23" value="PUT /postsData(postsDataProps)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1886" y="1720" as="sourcePoint"/>
+                        <mxPoint x="2073" y="1721" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-24" value="201 created PostData" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2083" y="1790" as="sourcePoint"/>
+                        <mxPoint x="1885" y="1790" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-25" value="if post is after an hour,&lt;div&gt;add it to agenda&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2086" y="1740" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="2116" y="1770"/>
+                        </Array>
+                        <mxPoint x="2091" y="1770" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-26" value="GET /postsData" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1886" y="1830" as="sourcePoint"/>
+                        <mxPoint x="2073" y="1831" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-27" value="200 ok [PostData]" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2083" y="1870" as="sourcePoint"/>
+                        <mxPoint x="1885" y="1870" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-28" value="GET /posts" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1886" y="1906" as="sourcePoint"/>
+                        <mxPoint x="2073" y="1907" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-29" value="200 ok [Post]" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2083" y="1940" as="sourcePoint"/>
+                        <mxPoint x="1885" y="1940" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-30" value="user wants to see his posts" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1710" y="1810" as="sourcePoint"/>
+                        <mxPoint x="1875" y="1810" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-31" value="user wants to see his published posts" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1710" y="1890" as="sourcePoint"/>
+                        <mxPoint x="1875" y="1890" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-32" value="POST /postdata" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="1886" y="1610" as="sourcePoint"/>
+                        <mxPoint x="2073" y="1611" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-33" value="whenever the user enters the website" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="1048" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="P22XrcBUhHHD5Wx6bQLX-34" value="first time enter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1830" y="1048" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8b4HX3dYUHx0h7ovzuIh-1" value="201 created {status: success}" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+                    <mxGeometry x="0.0404" y="20" relative="1" as="geometry">
+                        <mxPoint x="1413" y="1630" as="sourcePoint"/>
+                        <mxPoint x="1215" y="1630" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="Oz1WUjvAjqPyoGqg9K6c" name="scheduling">
+        <mxGraphModel dx="1253" dy="731" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="qnCO7IN75JWVIPcF3vgf-1" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="50" y="60" width="350" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="qnCO7IN75JWVIPcF3vgf-2" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="qnCO7IN75JWVIPcF3vgf-1" vertex="1">
+                    <mxGeometry width="350" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="qnCO7IN75JWVIPcF3vgf-5" value="&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;scheduling&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;span data--h-bstatus=&quot;0OBSERVED&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;actor: system&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;br data--h-bstatus=&quot;0OBSERVED&quot;&gt;&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;scenario:&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;system should be able to store posts data provided by&lt;/div&gt;&lt;div data--h-bstatus=&quot;0OBSERVED&quot;&gt;user, schedule them to be published on time&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="qnCO7IN75JWVIPcF3vgf-1" vertex="1">
+                    <mxGeometry x="26" y="30" width="310" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="100" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" parent="1" source="Xnq2O16dFir2Nw8r1lZW-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-3" value="get the post to publish" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="190" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" parent="1" source="Xnq2O16dFir2Nw8r1lZW-3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-5" value="publish the post" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="290" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" parent="1" source="Xnq2O16dFir2Nw8r1lZW-5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="390" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-7" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+                    <mxGeometry x="515" y="490" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-8" value="publish script" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="485" y="60" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-9" value="save published post into database" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="390" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Xnq2O16dFir2Nw8r1lZW-10" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" parent="1" source="Xnq2O16dFir2Nw8r1lZW-9" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="530" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="D8d9fWLOJ-akOthRqgw4" name="sitemap">
+        <mxGraphModel dx="459" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Y1wKoS1y5LKKzcrTX2Nv-5" value="profile" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1190" y="510" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y1wKoS1y5LKKzcrTX2Nv-12" value="dashboard" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="510" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y1wKoS1y5LKKzcrTX2Nv-15" value="landing page" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1370" y="510" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Y1wKoS1y5LKKzcrTX2Nv-16" value="pricing" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1540" y="510" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
