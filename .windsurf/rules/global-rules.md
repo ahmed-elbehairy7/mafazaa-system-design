@@ -2,178 +2,140 @@
 trigger: always_on
 ---
 
-# Drawing Instructions and Patterns
+# Global System Design Rules
 
-## Overview
+## 1. Page Structure & Sitemap Design
 
-This document provides guidance for creating and modifying diagrams in this repository. Always refer to existing drawings as reference to maintain consistency.
+### Routing Hierarchy
+- Use clear hierarchical routing structure
+- Implement protection levels for all routes:
+  - `guestOnly`: Accessible only to non-authenticated users
+  - `protected`: Requires authentication
+  - `public`: Accessible to all users
+- Root path (`/`) should redirect to appropriate landing page
 
-## General Guidelines
+### Page Organization
+- Group related pages into logical sections (Auth, Profile, Payments, etc.)
+- Use descriptive route names that reflect functionality
+- Implement navigation bars between related views
+- Include page descriptions in sitemap documentation
 
-1. Use established color schemes:
+### Common Page Patterns
+- **Auth Pages**: `/signup`, `/login`, `/confirm`, `/resetPass`
+- **Profile Pages**: `/profile`, `/profile/transaction`, `/profile/subscription`
+- **Payment Pages**: `/checkout`
+- **List Views**: Display items with brief descriptions
+- **Detail Views**: Full data representation of selected items
 
-    - Light blue (#dae8fc) for API endpoints and flows
-    - Light yellow (#fff2cc) for validation/decision steps
-    - Light red (#f8cecc) for error states and alerts
-    - Light green (#d5e8d4) for success states
-    - Gray background (#ffffff) for general sections
-    - Orange (#ED7100) for compute resources
-    - Purple (#C925D1) for database services
-    - Red (#DD344C) for IAM roles and permissions
-    - Blue (#8C4FFF) for networking components
+## 2. API Route Design Patterns
 
-2. Follow AWS diagram conventions:
+### RESTful Conventions
+- Use standard HTTP methods:
+  - `GET`: Retrieve data
+  - `POST`: Create data
+  - `PUT`: Update data
+  - `DELETE`: Remove data
+- Route naming: `/resource/:id` or `/resource/action`
+- Pluralize resource names in routes
 
-    - Use official AWS icon set
-    - Group resources by region and AZ
-    - Layer VPC, subnet, and security group containers
-    - Color code by service type
-    - Include monitoring and alarm components
+### Access Control
+- Implement middleware for route protection
+- Use JWT Bearer tokens for protected endpoints
+- Structure: `Authorization: Bearer AccessToken`
+- Validate client applications for external integrations
 
-3. Maintain consistent layout patterns:
-    - Top-down flow for process diagrams
-    - Left-to-right for website/user flows
-    - Nested containers for infrastructure
-    - Group related components with clear boundaries
+## 3. Data Model Design
 
-## Diagram-Specific Patterns
+### Field Structure
+- Define clear field types for all data models
+- Include validation rules and constraints
+- Use descriptive field names
+- Implement proper indexing for frequently queried fields
 
-### Website Flow Diagrams
+### Enum Standards
+- Define enums for fixed value sets
+- Use uppercase naming convention
+- Document all possible values and their meanings
+- Implement enum validation at API level
 
--   Use rounded rectangles for user interface states
--   Connect pages with directional arrows
--   Include Arabic titles for user-facing elements
--   Group related pages/functionalities vertically
--   Add explanatory notes for each component
--   Show validation steps and error states
--   Include user action flows and transitions
--   Represent modals and popups distinctly
--   Document success/completion states
 
-### Process Flow Diagrams
+### Validation Rules
+- Required field validation
+- Type checking (string, number, boolean, etc.)
+- Format validation (email, dates, etc.)
+- Business rule validation
 
--   Start with clear input/trigger state
--   Use diamonds for decision points
--   Include all validation and branching logic
--   Show error handling paths
--   Document success and failure states
--   Add caching/optimization steps
--   Include database interactions
--   Show external service calls
--   Document retry/fallback logic
+## 4. Component Grouping
 
-### AWS Infrastructure Diagrams
+### UI Component Organization
+- Group related UI components together
+- Create reusable component libraries
+- Implement consistent styling and theming
+- Use component composition for complex interfaces
 
--   Follow official AWS architectural patterns
--   Create clear VPC boundaries
--   Document all security groups
--   Show instance types and counts
--   Include all IAM roles and policies
--   Document IP ranges and subnets
--   Show load balancer configurations
--   Include monitoring and logging
--   Add scaling components and rules
--   Document backup and failover
--   Show cross-AZ redundancy
--   Include CloudWatch alarms
+### Backend Module Structure
+- Organize by feature/domain
+- Separate concerns: routes, controllers, models, services
+- Implement dependency injection
+- Use middleware for cross-cutting concerns
 
-### Requirements Documentation
+### Common Component Patterns
+- **Navigation Components**: Bars, menus, breadcrumbs
+- **Form Components**: Input fields, validation, submission
+- **List Components**: Tables, cards, pagination
+- **Detail Components**: Read-only views, edit modes
 
--   Split into functional/non-functional sections
--   Include scalability requirements
--   Document availability needs
--   Specify latency requirements
--   List consistency requirements
--   Document capacity planning
--   Include security requirements
--   Specify monitoring needs
--   List backup/recovery requirements
+## 5. Sequence Diagram Standards
 
-## Visual Elements
+### Actor Definitions
+- Define clear actors: User, UI, API, Database, External Services
+- Use consistent lifeline representations
+- Include actor descriptions and responsibilities
 
-1. Decision Points:
+### Interaction Patterns
+- Show clear message flow between components
+- Include request/response pairs
+- Use proper arrow types (synchronous, asynchronous, return)
+- Implement alt/loop/opt blocks for conditional logic
 
-    - Use rhombus shapes
-    - Show clear yes/no paths
-    - Include validation criteria
-    - Document error conditions
-    - Show caching checks
-    - Include permission validation
+### Diagram Organization
+- Group related sequence diagrams
+- Use descriptive titles and descriptions
+- Include timing and concurrency considerations
+- Document error handling paths
 
-2. State Boxes:
+## 6. Authentication & Authorization
 
-    - Rounded corners for UI states
-    - Sharp corners for system processes
-    - Consistent sizing per type
-    - Clear entry/exit points
-    - Include status indicators
+### JWT Token Management
+- Implement access and refresh token pattern
+- Set appropriate token expiration times
+- Store tokens securely on client side
+- Implement token refresh logic
 
-3. Connections:
+### Authentication Flow
+- User signup with email validation
+- Email confirmation process
+- Password reset functionality
+- Two-factor authentication support
 
-    - Orthogonal routing for flow lines
-    - Clear directional arrows
-    - Label all transitions
-    - Show async vs sync flows
-    - Document retry logic
-    - Include fallback paths
+### Authorization Rules
+- Role-based access control
+- Resource-level permissions
+- Route protection middleware
+- Client application authorization
 
-4. Grouping:
-    - Clear container boundaries
-    - Consistent padding
-    - Logical component grouping
-    - Show service boundaries
-    - Include environment separation
+### Security Standards
+- Password hashing and salting
+- Token revocation mechanisms
+- Rate limiting for auth endpoints
+- Secure cookie handling
 
-## Data Flow Elements
+## 7. Error Handling
 
-1. Cache Layers:
-
-    - Show Redis instances
-    - Document TTL policies
-    - Include refresh logic
-    - Show cache hierarchies
-
-2. Database Interactions:
-
-    - Show read/write patterns
-    - Document consistency levels
-    - Include replication flows
-    - Show backup processes
-
-3. API Flows:
-
-    - Document endpoints
-    - Show request/response
-    - Include validation
-    - Show rate limiting
-    - Document authentication
-
-4. Security:
-    - Show IAM roles
-    - Include security groups
-    - Document access patterns
-    - Show encryption points
-
-## Review Process
-
-Before committing new diagrams:
-
-1. Compare with existing examples
-2. Check color scheme consistency
-3. Verify component alignment
-4. Ensure proper labeling
-5. Add explanatory notes
-6. Validate security patterns
-7. Check scaling components
-8. Verify monitoring inclusion
-
-Reference existing diagrams for:
-
--   Color schemes and visual patterns
--   Layout and flow organization
--   Component naming conventions
--   Service grouping patterns
--   Infrastructure patterns
--   Security implementations
--   Monitoring configurations
--   Scaling approaches
+### Error Response Format
+```javascript
+{
+  error: "descriptive_error_message",
+  details: "additional_context_if_needed",
+  code: "error_code_for_programmatic_handling"
+}
