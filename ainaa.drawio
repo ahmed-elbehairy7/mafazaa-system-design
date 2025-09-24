@@ -1,283 +1,283 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.2.4" pages="2">
-  <diagram name="high-level" id="8-smb9yRM81izmXv1z2y">
-    <mxGraphModel dx="1232" dy="1684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="nlzph1IIV6YKt-vDAN2--1" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="890" y="90" width="480" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--2" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
-          <mxGeometry width="480" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="nlzph1IIV6YKt-vDAN2--1" source="nlzph1IIV6YKt-vDAN2--4" target="nlzph1IIV6YKt-vDAN2--6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--4" value="user interface&lt;div&gt;nextjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
-          <mxGeometry x="10" y="63" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="nlzph1IIV6YKt-vDAN2--1" source="nlzph1IIV6YKt-vDAN2--6" target="nlzph1IIV6YKt-vDAN2--7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--6" value="backend api server&lt;div&gt;expressjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
-          <mxGeometry x="180" y="63" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--7" value="mongoDb db" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
-          <mxGeometry x="380" y="50" width="41.2" height="86.2" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--8" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (components)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
-          <mxGeometry y="10" width="270" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--9" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="70" y="290" width="640" height="700" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--10" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="nlzph1IIV6YKt-vDAN2--9" vertex="1">
-          <mxGeometry width="640" height="700" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--11" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Authentication Endpoints&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /api/register&lt;/div&gt;&lt;div&gt;Body: { phone: string, source: string }&lt;/div&gt;&lt;div&gt;Response: 200 ok { message: string }&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;// Redirect to OTP&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;POST /api/auth/send-otp&lt;/div&gt;&lt;div&gt;Body: { phone: string }&lt;/div&gt;&lt;div&gt;Response: 200 ok { message: string }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /api/auth/verify-otp&lt;/div&gt;&lt;div&gt;Body: { phone: string, otp: string }&lt;/div&gt;&lt;div&gt;R&lt;span style=&quot;background-color: transparent;&quot;&gt;esponse: 200 ok { user: User }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Report Endpoints&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;POST /api/report&lt;/div&gt;&lt;div&gt;Body: { name: string, email: string, phone: string, message: string, source: string }&lt;/div&gt;&lt;div&gt;&lt;div&gt;Response: 200 ok { message string, report_id: int }&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /api/report/id&lt;/div&gt;&lt;div&gt;&lt;div&gt;Response: 200 ok { message: string, domain: Domain }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;GET /api/report/status&lt;/div&gt;&lt;div&gt;Response: 200 ok { message: string, domains: Domain[] }&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Block Domain Endpoints&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;POST /api/domains&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Body: { url: string }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Response: 200 ok { message: string, domain_id: int }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;GET /api/domains/id&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Response:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;200 ok&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;{ domain: BlockedDomain }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /api/domains/mine&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Path: { user_id: int }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Response:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;200 ok&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;{ domains: BlockedDomain[] }&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--9" vertex="1">
-          <mxGeometry x="30" y="10" width="460" height="580" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--13" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (API)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--9" vertex="1">
-          <mxGeometry x="430" y="15.267857142857142" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--18" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="750" y="290" width="640" height="1290" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--19" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry width="640" height="920" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--20" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;phone_number: string, // unique&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;email?: string, // optional&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;is_verified: boolean,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;updated_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry x="30" y="90" width="220" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data models&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry x="470" y="15" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--39" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;all data models should include the id, created_at, updated_at properties&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry x="20" y="10" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--40" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Report&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;user_id?: string, // optional for anonymous&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;name?: string, // default value &quot;Guest&quot;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;message: string,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;source: &#39;window&#39;|&#39;website&#39;|&#39;android&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status: &#39;pending&#39;|&#39;reviewed&#39;|&#39;resolved&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry x="30" y="310" width="270" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="nlzph1IIV6YKt-vDAN2--41" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BlockedDomain&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;url: string, // unique&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status: &#39;enabled&#39;|&#39;disabled&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry x="30" y="520" width="190" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="ppBrmT6UgiOP-zEjPV4z-6" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;UserBlockedDomain&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;domain_id: int, // unique combination with user_id&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;user_id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status: &#39;enabled&#39;|&#39;disabled&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;updated_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
-          <mxGeometry x="30" y="680" width="310" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="2" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="70" y="-10" width="790" height="290" as="geometry" />
-        </mxCell>
-        <mxCell id="3" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="2" vertex="1">
-          <mxGeometry width="790" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Functional requirements&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;1. authentication, authorization and user accounts: should be the easiest minimal way with phone number&lt;br&gt;2. reports: users can easily report problems and we have a way to view them&lt;br&gt;3. new domains: the api can gather new domains being blocked by users&lt;br&gt;&lt;br&gt;&lt;b&gt;NOT MVP:&lt;br&gt;&lt;/b&gt;1. users can view domain names and vote on them being blocked or not, and there should be an admin panel to see all that&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="2" vertex="1">
-          <mxGeometry x="10" y="15" width="370" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Non-functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;1. scalability: should be easily scalable&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;2. availability: should be always available&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;3. latency: shouldn&#39;t be a bad experience&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: normal;&quot;&gt;4. consistency: all data should be synced&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. calculations: normal&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="2" vertex="1">
-          <mxGeometry x="420" y="80" width="350" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="6" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="2" vertex="1">
-          <mxGeometry x="310" width="130" height="30" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="yDcnoQ-w4sotKixott70" name="website">
-    <mxGraphModel dx="1266" dy="289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-1" value="Requirements:&lt;br&gt;&lt;br&gt;1. steps/installation of apps for windows, android, linux, mac, ios, router&lt;div&gt;2. clear explanations for every step&lt;/div&gt;&lt;div&gt;3. a page indicating that protection is already done on this device&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="40" y="28" width="400" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-8" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);strokeWidth=2;endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-2" target="rOXuChgOmX8JVEiVYjmg-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-2" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-2" target="UtuCvoRXhWz_WTzKwQfW-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-2" value="الصفحة الرئيسية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-19" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-3" target="UtuCvoRXhWz_WTzKwQfW-18" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-43" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-3" target="rOXuChgOmX8JVEiVYjmg-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-3" value="شوية شرح" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-10" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-4" target="rOXuChgOmX8JVEiVYjmg-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-21" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-4" target="UtuCvoRXhWz_WTzKwQfW-20" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-4" value="اختار الجهاز اللي عايز تفعل عليه الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="500" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-11" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-5" target="UtuCvoRXhWz_WTzKwQfW-56" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="850" y="200" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-26" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-5" target="UtuCvoRXhWz_WTzKwQfW-25" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-5" value="شرح خطوات أو برنامج للتحميل" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="680" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-18" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-7" target="rOXuChgOmX8JVEiVYjmg-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-32" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-7" target="UtuCvoRXhWz_WTzKwQfW-31" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-7" value="دعمنا، أم تفعليها على جهاز اخر" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1040" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-36" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-13" target="UtuCvoRXhWz_WTzKwQfW-35" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-13" value="الصفحة الرئيسية للمدونة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1390" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-14" value="خدمة العملاء و التبرع موجودين دائما" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1570" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-15" value="نافذة مستويات الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1740" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-34" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-16" target="UtuCvoRXhWz_WTzKwQfW-33" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-16" value="لقد تم تفعيل الحماية من قبل بالفعل" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1210" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-40" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-17" target="UtuCvoRXhWz_WTzKwQfW-39" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rOXuChgOmX8JVEiVYjmg-17" value="منشور في المدونة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1910" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-4" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-1" target="UtuCvoRXhWz_WTzKwQfW-3" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-1" value="تصميم عشوائي من مجموعة تصميمات و عناوين مختارة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-6" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-3" target="UtuCvoRXhWz_WTzKwQfW-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-3" value="دعوة لقراءة أهم منشوري المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-8" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-5" target="UtuCvoRXhWz_WTzKwQfW-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-5" value="مستويات الحماية المتاحة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="590" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-10" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-7" target="UtuCvoRXhWz_WTzKwQfW-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-7" value="التأكيد على أهمية الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-30" y="590" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-13" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-9" target="UtuCvoRXhWz_WTzKwQfW-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-9" value="الحماية سهلة و بسيطة عن طريق برنامج يتم تحميله" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-30" y="450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-15" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-12" target="UtuCvoRXhWz_WTzKwQfW-14" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-12" value="ادعمنا" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-30" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-14" value="ما هي مفازا" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-30" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-18" value="مساحة لكلام العميل يقرأه قبل ما يفعل الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-24" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-20" target="UtuCvoRXhWz_WTzKwQfW-23" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-20" value="اختيار الجهاز اللي عايز يفعل عليه الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="500" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-23" value="زرار للاطلاع على مستويات الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="500" y="450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-28" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-25" target="UtuCvoRXhWz_WTzKwQfW-27" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-25" value="يإما صفحة فيها شعار للجهاز و تحميله" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="680" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-27" value="يإما صفحة فيها جزء من الخطوات، و الخطوات فيها التالي و السابق" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="680" y="450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-31" value="نافذة الدعم، و زرار لتفعيل الحماية على جهاز اخر" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1040" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-33" value="إظهار خطأ إذا كان المستخدم قد فعل الحماية بالفعل" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1210" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-38" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-35" target="UtuCvoRXhWz_WTzKwQfW-37" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-35" value="أهم منشوري المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1390" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-37" value="منشورات     " style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1390" y="450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-42" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-39" target="UtuCvoRXhWz_WTzKwQfW-41" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-39" value="مكونات المنشور:&lt;div&gt;1. تصميم&lt;br&gt;2. عنوان&lt;/div&gt;&lt;div&gt;3. المنشور نفسه&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1910" y="310" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-41" value="اطلع على منشورات أخرى" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="1910" y="480" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-47" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-44" target="UtuCvoRXhWz_WTzKwQfW-46" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-44" value="نافذة الدعم" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="2110" y="170" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-46" value="يحدد العميل الكمية اللي عايز يدعمنا بيها، و زرار &quot;ادعمنا&quot; ينقله على بوابة الدفع مباشر" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="2110" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-55" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-56" target="UtuCvoRXhWz_WTzKwQfW-57" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-58" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-56" target="rOXuChgOmX8JVEiVYjmg-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-56" value="مبارك تفعيل الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-61" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-57" target="UtuCvoRXhWz_WTzKwQfW-60" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-57" value="خطوات لاختبار إن كانت الحماية تم تفعيلها بالفعل" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="870" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-63" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-60" target="UtuCvoRXhWz_WTzKwQfW-62" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-60" value="لو الحماية مش مفعلة، تظهر تحت نصائح يجربها المستخدم" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="870" y="450" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="UtuCvoRXhWz_WTzKwQfW-62" value="لو مش عارف يشغل الحماية، يتواصل مع خدمة العملاء" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="870" y="590" width="120" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e" pages="2">
+    <diagram name="high-level" id="8-smb9yRM81izmXv1z2y">
+        <mxGraphModel dx="806" dy="1716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--1" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="890" y="90" width="480" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--2" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
+                    <mxGeometry width="480" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="nlzph1IIV6YKt-vDAN2--1" source="nlzph1IIV6YKt-vDAN2--4" target="nlzph1IIV6YKt-vDAN2--6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--4" value="user interface&lt;div&gt;nextjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
+                    <mxGeometry x="10" y="63" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="nlzph1IIV6YKt-vDAN2--1" source="nlzph1IIV6YKt-vDAN2--6" target="nlzph1IIV6YKt-vDAN2--7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--6" value="backend api server&lt;div&gt;expressjs, typescript&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
+                    <mxGeometry x="180" y="63" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--7" value="mongoDb db" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.mongodb" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
+                    <mxGeometry x="380" y="50" width="41.2" height="86.2" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--8" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (components)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--1" vertex="1">
+                    <mxGeometry y="10" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--9" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="70" y="290" width="640" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--10" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="nlzph1IIV6YKt-vDAN2--9" vertex="1">
+                    <mxGeometry width="640" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--11" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Authentication Endpoints&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /api/register&lt;/div&gt;&lt;div&gt;Body: { phone: string, source: string }&lt;/div&gt;&lt;div&gt;Response: 200 ok { message: string }&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;// Redirect to OTP&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;POST /api/auth/send-otp&lt;/div&gt;&lt;div&gt;Body: { phone: string }&lt;/div&gt;&lt;div&gt;Response: 200 ok { message: string }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /api/auth/verify-otp&lt;/div&gt;&lt;div&gt;Body: { phone: string, otp: string }&lt;/div&gt;&lt;div&gt;R&lt;span style=&quot;background-color: transparent;&quot;&gt;esponse: 200 ok { user: User }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Report Endpoints&lt;/b&gt;&lt;/div&gt;&lt;br&gt;GET /api/report&lt;br&gt;response: 200 ok {reports}&lt;br&gt;&lt;br&gt;&lt;div&gt;POST /api/report&lt;/div&gt;&lt;div&gt;Body: { name: string, email: string, phone: string, message: string, source: string }&lt;/div&gt;&lt;div&gt;&lt;div&gt;Response: 200 ok { message string, report_id: int }&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /api/report/id&lt;/div&gt;&lt;div&gt;&lt;div&gt;Response: 200 ok { message: string, domain: Domain }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;GET /api/report/status&lt;/div&gt;&lt;div&gt;Response: 200 ok { message: string, domains: Domain[] }&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;Block Domain Endpoints&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;POST /api/domains&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Body: { url: string }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Response: 200 ok { message: string, domain_id: int }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;GET /api/domains/id&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Response:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;200 ok&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;{ domain: BlockedDomain }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GET /api/domains/mine&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Path: { user_id: int }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Response:&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;200 ok&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;{ domains: BlockedDomain[] }&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--9" vertex="1">
+                    <mxGeometry x="30" y="20" width="460" height="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--13" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;High level design (API)&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--9" vertex="1">
+                    <mxGeometry x="430" y="15.267857142857142" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--18" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="750" y="290" width="640" height="1290" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--19" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry width="640" height="920" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--20" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;phone_number: string, // unique&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;email?: string, // optional&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;is_verified: boolean,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;updated_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry x="30" y="90" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data models&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry x="470" y="15" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--39" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;all data models should include the id, created_at, updated_at properties&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry x="20" y="10" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--40" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Report&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent; white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;name?: string, // default value &quot;Guest&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;phone_number: string,&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;email?: string, // optional&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;message: string,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;source: &#39;window&#39;|&#39;website&#39;|&#39;android&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status: &#39;pending&#39;|&#39;reviewed&#39;|&#39;resolved&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry x="30" y="295" width="250" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="nlzph1IIV6YKt-vDAN2--41" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BlockedDomain&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;url: string, // unique&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status: &#39;enabled&#39;|&#39;disabled&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry x="30" y="520" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ppBrmT6UgiOP-zEjPV4z-6" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;UserBlockedDomain&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;domain_id: int, // unique combination with user_id&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;user_id: int,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;status: &#39;enabled&#39;|&#39;disabled&#39;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;created_at: Date,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;updated_at: Date&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="nlzph1IIV6YKt-vDAN2--18" vertex="1">
+                    <mxGeometry x="30" y="680" width="310" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="group" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="70" y="-10" width="790" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="whiteSpace=wrap;html=1;fontSize=11;" parent="2" vertex="1">
+                    <mxGeometry width="790" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;Functional requirements&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;2. reports: users can easily report problems and we have a way to view them&lt;br&gt;3. new domains: the api can gather new domains being blocked by users&lt;br&gt;&lt;br&gt;&lt;b&gt;NOT MVP:&lt;br&gt;&lt;/b&gt;1. users can view domain names and vote on them being blocked or not, and there should be an admin panel to see all that&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;2. authentication: users authenticate using mafazaa sso&lt;/span&gt;&lt;br style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251);&quot;&gt;&lt;/div&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 100%;&quot;&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="10" y="15" width="370" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Non-functional requirements&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;font-size: 12px; font-weight: 400;&quot;&gt;1. scalability: should be easily scalable&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;2. availability: should be always available&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: 400;&quot;&gt;3. latency: shouldn&#39;t be a bad experience&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px; line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-size: 12px; font-weight: normal;&quot;&gt;4. consistency: all data should be synced&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;line-height: 0%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;5. calculations: normal&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="420" y="80" width="350" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Requirements&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="2" vertex="1">
+                    <mxGeometry x="310" width="130" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="yDcnoQ-w4sotKixott70" name="website">
+        <mxGraphModel dx="1266" dy="289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-1" value="Requirements:&lt;br&gt;&lt;br&gt;1. steps/installation of apps for windows, android, linux, mac, ios, router&lt;div&gt;2. clear explanations for every step&lt;/div&gt;&lt;div&gt;3. a page indicating that protection is already done on this device&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="28" width="400" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-8" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);strokeWidth=2;endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-2" target="rOXuChgOmX8JVEiVYjmg-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-2" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-2" target="UtuCvoRXhWz_WTzKwQfW-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-2" value="الصفحة الرئيسية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-19" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-3" target="UtuCvoRXhWz_WTzKwQfW-18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-43" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-3" target="rOXuChgOmX8JVEiVYjmg-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-3" value="شوية شرح" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-10" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-4" target="rOXuChgOmX8JVEiVYjmg-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-21" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-4" target="UtuCvoRXhWz_WTzKwQfW-20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-4" value="اختار الجهاز اللي عايز تفعل عليه الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-11" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-5" target="UtuCvoRXhWz_WTzKwQfW-56" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="850" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-26" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-5" target="UtuCvoRXhWz_WTzKwQfW-25" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-5" value="شرح خطوات أو برنامج للتحميل" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-18" style="edgeStyle=none;html=1;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="rOXuChgOmX8JVEiVYjmg-7" target="rOXuChgOmX8JVEiVYjmg-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-32" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-7" target="UtuCvoRXhWz_WTzKwQfW-31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-7" value="دعمنا، أم تفعليها على جهاز اخر" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-36" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-13" target="UtuCvoRXhWz_WTzKwQfW-35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-13" value="الصفحة الرئيسية للمدونة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-14" value="خدمة العملاء و التبرع موجودين دائما" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1570" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-15" value="نافذة مستويات الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1740" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-34" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-16" target="UtuCvoRXhWz_WTzKwQfW-33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-16" value="لقد تم تفعيل الحماية من قبل بالفعل" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1210" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-40" value="" style="edgeStyle=none;html=1;" parent="1" source="rOXuChgOmX8JVEiVYjmg-17" target="UtuCvoRXhWz_WTzKwQfW-39" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rOXuChgOmX8JVEiVYjmg-17" value="منشور في المدونة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1910" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-4" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-1" target="UtuCvoRXhWz_WTzKwQfW-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-1" value="تصميم عشوائي من مجموعة تصميمات و عناوين مختارة" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-6" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-3" target="UtuCvoRXhWz_WTzKwQfW-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-3" value="دعوة لقراءة أهم منشوري المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-8" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-5" target="UtuCvoRXhWz_WTzKwQfW-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-5" value="مستويات الحماية المتاحة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-10" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-7" target="UtuCvoRXhWz_WTzKwQfW-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-7" value="التأكيد على أهمية الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-13" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-9" target="UtuCvoRXhWz_WTzKwQfW-12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-9" value="الحماية سهلة و بسيطة عن طريق برنامج يتم تحميله" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-15" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-12" target="UtuCvoRXhWz_WTzKwQfW-14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-12" value="ادعمنا" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-14" value="ما هي مفازا" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-18" value="مساحة لكلام العميل يقرأه قبل ما يفعل الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-24" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-20" target="UtuCvoRXhWz_WTzKwQfW-23" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-20" value="اختيار الجهاز اللي عايز يفعل عليه الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-23" value="زرار للاطلاع على مستويات الحماية" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-28" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-25" target="UtuCvoRXhWz_WTzKwQfW-27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-25" value="يإما صفحة فيها شعار للجهاز و تحميله" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-27" value="يإما صفحة فيها جزء من الخطوات، و الخطوات فيها التالي و السابق" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-31" value="نافذة الدعم، و زرار لتفعيل الحماية على جهاز اخر" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-33" value="إظهار خطأ إذا كان المستخدم قد فعل الحماية بالفعل" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1210" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-38" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-35" target="UtuCvoRXhWz_WTzKwQfW-37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-35" value="أهم منشوري المدونة" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-37" value="منشورات     " style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1390" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-42" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-39" target="UtuCvoRXhWz_WTzKwQfW-41" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-39" value="مكونات المنشور:&lt;div&gt;1. تصميم&lt;br&gt;2. عنوان&lt;/div&gt;&lt;div&gt;3. المنشور نفسه&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1910" y="310" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-41" value="اطلع على منشورات أخرى" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1910" y="480" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-47" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-44" target="UtuCvoRXhWz_WTzKwQfW-46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-44" value="نافذة الدعم" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2110" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-46" value="يحدد العميل الكمية اللي عايز يدعمنا بيها، و زرار &quot;ادعمنا&quot; ينقله على بوابة الدفع مباشر" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="2110" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-55" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-56" target="UtuCvoRXhWz_WTzKwQfW-57" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-58" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=light-dark(#ff0000, #ededed);endArrow=openAsync;endFill=0;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-56" target="rOXuChgOmX8JVEiVYjmg-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-56" value="مبارك تفعيل الحماية" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-61" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-57" target="UtuCvoRXhWz_WTzKwQfW-60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-57" value="خطوات لاختبار إن كانت الحماية تم تفعيلها بالفعل" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="310" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-63" value="" style="edgeStyle=none;html=1;" parent="1" source="UtuCvoRXhWz_WTzKwQfW-60" target="UtuCvoRXhWz_WTzKwQfW-62" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-60" value="لو الحماية مش مفعلة، تظهر تحت نصائح يجربها المستخدم" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="450" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="UtuCvoRXhWz_WTzKwQfW-62" value="لو مش عارف يشغل الحماية، يتواصل مع خدمة العملاء" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
