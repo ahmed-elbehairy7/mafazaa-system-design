@@ -1,6 +1,6 @@
-<mxfile host="65bd71144e" pages="4">
+<mxfile host="65bd71144e" pages="5">
     <diagram name="high-level" id="M2Swn5DO_KZL-WYsBz92">
-        <mxGraphModel dx="901" dy="340" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1532" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -49,7 +49,7 @@
                 <mxCell id="idgF_Fbc9nhU_HcW70fU-2" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Add dynamic projects feature&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;b&gt;Description&lt;/b&gt;: this feature allows admin from adding projects in projects display in Mafazaa main website. Each project will have title, description, image, website URL, and can be activated or featured or not from admin dashboard&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fillColor=default;" vertex="1" parent="1">
                     <mxGeometry x="90" y="410" width="345" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="idgF_Fbc9nhU_HcW70fU-3" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="idgF_Fbc9nhU_HcW70fU-3" value="" style="group" connectable="0" vertex="1" parent="1">
                     <mxGeometry x="90" y="690" width="320" height="320" as="geometry"/>
                 </mxCell>
                 <mxCell id="idgF_Fbc9nhU_HcW70fU-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data Model&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="idgF_Fbc9nhU_HcW70fU-3">
@@ -82,7 +82,7 @@
                 <mxCell id="fLQ9Fi_1cwwQIBjIodL9-1" value="&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Admin-Clients Chat&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Description&lt;/b&gt;: This feature allows users to chat with admin, and admin can chat users through admin dashboard&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;fillColor=default;" vertex="1" parent="1">
                     <mxGeometry x="530" y="405" width="300" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="fLQ9Fi_1cwwQIBjIodL9-2" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="fLQ9Fi_1cwwQIBjIodL9-2" value="" style="group" connectable="0" vertex="1" parent="1">
                     <mxGeometry x="530" y="770" width="395" height="310" as="geometry"/>
                 </mxCell>
                 <mxCell id="fLQ9Fi_1cwwQIBjIodL9-3" value="&lt;h1&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data Model&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="fLQ9Fi_1cwwQIBjIodL9-2">
@@ -121,7 +121,7 @@
                 <mxCell id="fLQ9Fi_1cwwQIBjIodL9-14" value="createdAt" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fLQ9Fi_1cwwQIBjIodL9-8">
                     <mxGeometry y="180" width="140" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="fLQ9Fi_1cwwQIBjIodL9-15" value="" style="group" vertex="1" connectable="0" parent="1">
+                <mxCell id="fLQ9Fi_1cwwQIBjIodL9-15" value="" style="group" connectable="0" vertex="1" parent="1">
                     <mxGeometry x="530" y="560" width="370" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="fLQ9Fi_1cwwQIBjIodL9-16" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;API Endpoints&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="fLQ9Fi_1cwwQIBjIodL9-15">
@@ -130,11 +130,67 @@
                 <mxCell id="fLQ9Fi_1cwwQIBjIodL9-17" value="&lt;div&gt;GET /chats =&amp;gt; get all chats&lt;/div&gt;&lt;div&gt;GET /chats/me =&amp;gt; get all chats of user&lt;/div&gt;&lt;div&gt;POST /chats/:id/messages =&amp;gt; send message in chat&lt;/div&gt;&lt;div&gt;PATCH /chats/:chatId/messages/:messageId =&amp;gt; Edit message&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;horizontal=1;spacingLeft=10;" vertex="1" parent="fLQ9Fi_1cwwQIBjIodL9-15">
                     <mxGeometry x="10" y="50" width="350" height="120" as="geometry"/>
                 </mxCell>
+                <mxCell id="2" value="G" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1000" y="818" width="395" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;h1&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Data Model&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="2">
+                    <mxGeometry width="395" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="votes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="2">
+                    <mxGeometry x="214" y="82" width="140" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="id&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="4">
+                    <mxGeometry y="30" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;div&gt;commentId fk&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="4">
+                    <mxGeometry y="60" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="userId fk" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="4">
+                    <mxGeometry y="90" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="comments" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="32" y="82" width="140" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="id&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="userId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="60" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="projectId" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="90" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="title" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="120" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="description" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry y="150" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="2" source="9" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="One-to-Many" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="14">
+                    <mxGeometry x="0.0556" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="&lt;h1&gt;Discussion&amp;nbsp;&lt;/h1&gt;&lt;p&gt;Description: This feature allows users to&amp;nbsp;&lt;/p&gt;&lt;p&gt;- discuss about a certain project by suggesting changes or new features&lt;/p&gt;&lt;p&gt;- voting for comments&lt;/p&gt;&lt;p&gt;- discuss about new projects&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;spacing=2;fillColor=default;glass=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="390" width="320" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1000" y="590" width="370" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;API Endpoints&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="17">
+                    <mxGeometry y="2" width="370" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;div&gt;GET /comments?projectId&amp;amp;userId =&amp;gt; get all comments (can filtered by projectId or userId)&lt;/div&gt;&lt;div&gt;POST /comments =&amp;gt; add comment to project&lt;/div&gt;&lt;div&gt;DELETE /comments/:id =&amp;gt; delete comment&lt;/div&gt;&lt;div&gt;POST /comments/:id/vote =&amp;gt; vote if user didn&#39;t vote&amp;nbsp;&lt;/div&gt;&lt;div&gt;POST /comments/:id/unvote =&amp;gt; remove vote if user voted already&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;horizontal=1;spacingLeft=10;" vertex="1" parent="17">
+                    <mxGeometry x="10" y="50" width="350" height="120" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram name="mng" id="rlp3dAk39oKLrBG6sQ65">
-        <mxGraphModel dx="1094" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="624" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
